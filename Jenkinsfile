@@ -20,6 +20,7 @@ pipeline {
             steps {
                 // 프로젝트를 빌드하고 jar 파일을 생성합니다.
                 sh './gradlew clean build'
+                sh 'chmod +x gradlew'
             }
         }
 
